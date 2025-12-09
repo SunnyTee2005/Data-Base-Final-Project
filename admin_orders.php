@@ -2,7 +2,7 @@
 require_once 'admin_auth.php';
 
 // 資料庫連線
-$conn = new mysqli("localhost", "root", "", "final_project_db");
+require_once 'db_connect.php';
 if ($conn->connect_error) die("連線失敗");
 $conn->set_charset("utf8mb4");
 

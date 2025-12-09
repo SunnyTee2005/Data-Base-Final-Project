@@ -2,7 +2,7 @@
 // 引入圖片輔助函數
 require_once 'image_helper.php';
 
-$conn = new mysqli("localhost", "root", "", "final_project_db");
+require_once 'db_connect.php';
 $conn->set_charset("utf8mb4");
 
 $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
